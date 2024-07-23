@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="calc">
+    <input type="text" name="" id="display" readonly placeholder="ON">
+    <div id="keys">
+        <button onclick="Append('+')" class="op">+</button>
+        <button onclick="Append('7')">7</button>
+        <button onclick="Append('8')">8</button>
+        <button onclick="Append('9')">9</button>
+        <button onclick="Append('-')"class="op">-</button>
+        <button onclick="Append('6')">6</button>
+        <button onclick="Append('5')">5</button>
+        <button onclick="Append('4')">4</button>
+        <button onclick="Append('*')" class="op">*</button>
+        <button onclick="Append('3')">3</button>
+        <button onclick="Append('2')">2</button>
+        <button onclick="Append('1')">1</button>
+        <button onclick="Append('/')" class="op">/</button>
+        <button onclick="Append('0')">0</button>
+        <button onclick="Append('.')">.</button>
+        <button onclick="calculate()" class="op">=</button>
+        <button onclick="del()">c</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

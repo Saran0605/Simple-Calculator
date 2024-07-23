@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+    #calc{
+    background-color: blueviolet;
+    max-width: 500px;
+    overflow: hidden;
+}
+#display{
+    width: 100%;
+    padding: 25px;
+    text-align: left;
+    border: none;
+    background-color: rgb(242, 5, 5);
+    color: rgb(255, 255, 255);
+    font-size: 5rem;
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 25px;
+}
+button{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(170, 178, 178);
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.op{
+    background-color: red;
+}
+button:hover{
+    animation-name: change-color;
+}
+
+@keyframes change-color{
+    from{
+        background-color: green;
+    }
+    to{
+        background-color: red;
+    }
+}
